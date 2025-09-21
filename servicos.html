@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - SoftBike</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background-color: #8A9BFF;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .header .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .header .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .header .nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .header .social a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .social img {
+            width: 20px;
+            margin-right: 5px;
+        }
+        .main-content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #8A9BFF;
+        }
+        .intro-text {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .service-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card h2 {
+            color: #8A9BFF;
+            font-size: 24px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .service-card p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .service-details {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .service-details h4 {
+            margin: 0 0 15px 0;
+            color: #333;
+        }
+        .service-details ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .service-details li {
+            margin-bottom: 8px;
+        }
+        .price-range {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+        .btn-agendar {
+            display: inline-block;
+            background-color: #8A9BFF;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn-agendar:hover {
+            background-color: #7084e8;
+        }
+        .workshop-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .workshop-section h2 {
+            color: #8A9BFF;
+            margin-bottom: 20px;
+        }
+        .site-footer {
+            background-color: #2c2c2c;
+            color: #a7a7a7;
+            padding: 50px 0;
+            font-size: 14px;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        @media (min-width: 768px) {
+            .footer-column {
+                width: 30%;
+            }
+        }
+        .site-footer h3 {
+            color: #ffffff;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #8A9BFF;
+            padding-bottom: 10px;
+        }
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-links ul li {
+            margin-bottom: 12px;
+        }
+        .footer-links a {
+            color: #a7a7a7;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: #8A9BFF;
+            padding-left: 5px;
+        }
+        .social-icons-container {
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons-container .social-icon {
+            height: 32px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        .social-icons-container .social-icon:hover {
+            opacity: 1;
+        }
+        .copyright {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+        .back-to-top {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .back-to-top a {
+            color: #8A9BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-to-top a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SOFTBIKE</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="speed.html">Speed</a>
+            <a href="mountain.html">Mountain</a>
+            <a href="urbana.html">Urbana</a>
+            <a href="eletrica.html">Elétrica</a>
+            <a href="passeio.html">Passeio</a>
+            <a href="acessorios.html">Acessórios</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="social">
+            <a href="https://www.instagram.com/seu-usuario" target="_blank" title="Nosso Instagram">
+                <img src="img/instagram.png" alt="Ícone do Instagram" class="social-icon">
+            </a>
+            <a href="https://wa.me/5511999999999" target="_blank" title="Nosso WhatsApp">
+                <img src="img/whatsapp.png" alt="Ícone do WhatsApp" class="social-icon">
+            </a>
+        </div>
+    </header>
+
+    <main class="main-content" id="inicio">
+        <h1>🔧 Serviços Especializados</h1>
+        <div class="intro-text">
+            <p>Mantenha sua bicicleta sempre em perfeitas condições com nossos serviços profissionais.</p>
+            <p>Equipe especializada, equipamentos modernos e garantia de qualidade em todos os serviços.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h2>🔧 Manutenção Básica</h2>
+                <p>Revisão completa dos principais componentes da sua bike para garantir segurança e performance no dia a dia.</p>
+                <div class="service-details">
+                    <h4>Inclui:</h4>
+                    <ul>
+                        <li>Ajuste de freios e câmbios</li>
+                        <li>Lubrificação da corrente</li>
+                        <li>Verificação de pneus e câmaras</li>
+                        <li>Aperto geral de parafusos</li>
+                        <li>Limpeza externa completa</li>
+                    </ul>
+                </div>
+                <div class="price-range">R$ 80,00 - R$ 120,00</div>
+                <a href="contato.html" class="btn-agendar">Agendar Serviço</a>
+            </div>
+
+            <div class="service-card">
+                <h2>⚙️ Manutenção Completa</h2>
+                <p>Revisão profunda de todos os sistemas da bicicleta, ideal para bikes que rodam frequentemente ou há muito tempo sem manutenção.</p>
+                <div class="service-details">
+                    <h4>Inclui:</h4>
+                    <ul>
+                        <li>Desmontagem e limpeza completa</li>
+                        <li>Revisão do sistema de transmissão</li>
+                        <li>Sangria de freios hidráulicos</li>
+                        <li>Regulagem de suspensões</li>
+                        <li>Troca de cabos e conduítes</li>
+                        <li>Centragem de rodas</li>
+                    </ul>
+                </div>
+                <div class="price-range">R$ 180,00 - R$ 280,00</div>
+                <a href="contato.html" class="btn-agendar">Agendar Serviço</a>
+            </div>
+
+            <div class="service-card">
+                <h2>🎨 Personalização</h2>
+                <p>Transforme sua bike em uma máquina única com nossos serviços de customização e upgrade de componentes.</p>
+                <div class="service-details">
+                    <h4>Oferecemos:</h4>
+                    <ul>
+                        <li>Pintura personalizada</li>
+                        <li>Aplicação de adesivos especiais</li>
+                        <li>Upgrade de componentes</li>
+                        <li>Instalação de acessórios</li>
+                        <li>Projeto de design exclusivo</li>
+                    </ul>
+                </div>
+                <div class="price-range">R$ 200,00 - R$ 800,00</div>
+                <a href="contato.html" class="btn-agendar">Consultar Projeto</a>
+            </div>
+
+            <div class="service-card">
+                <h2>🚨 Reparo de Emergência</h2>
+                <p>Serviço rápido para problemas urgentes que impedem o uso da sua bicicleta no dia a dia.</p>
+                <div class="service-details">
+                    <h4>Atendemos:</h4>
+                    <ul>
+                        <li>Reparo de pneus furados</li>
+                        <li>Ajuste de corrente solta</li>
+                        <li>Problemas de freio urgentes</li>
+                        <li>Câmbio desregulado</li>
+                        <li>Troca de cabo quebrado</li>
+                    </ul>
+                </div>
+                <div class="price-range">R$ 25,00 - R$ 80,00</div>
+                <a href="contato.html" class="btn-agendar">Atendimento Rápido</a>
+            </div>
+
+            <div class="service-card">
+                <h2>⚡ Manutenção E-bikes</h2>
+                <p>Serviço especializado para bicicletas elétricas, com conhecimento técnico específico em sistemas elétricos e baterias.</p>
+                <div class="service-details">
+                    <h4>Especialidades:</h4>
+                    <ul>
+                        <li>Diagnóstico de sistema elétrico</li>
+                        <li>Teste e calibração de bateria</li>
+                        <li>Atualização de firmware</li>
+                        <li>Limpeza de componentes elétricos</li>
+                        <li>Verificação de conectores</li>
+                    </ul>
+                </div>
+                <div class="price-range">R$ 150,00 - R$ 350,00</div>
+                <a href="contato.html" class="btn-agendar">Agendar E-bike</a>
+            </div>
+
+            <div class="service-card">
+                <h2>🏁 Preparação para Competição</h2>
+                <p>Setup profissional para competições, com ajustes precisos para máxima performance em provas e eventos.</p>
+                <div class="service-details">
+                    <h4>Preparação inclui:</h4>
+                    <ul>
+                        <li>Ajuste biomecânico personalizado</li>
+                        <li>Otimização aerodinâmica</li>
+                        <li>Calibração precisa de componentes</li>
+                        <li>Teste de performance</li>
+                        <li>Relatório técnico detalhado</li>
+                    </ul>
+                </div>
+                <div class="price-range">R$ 300,00 - R$ 500,00</div>
+                <a href="contato.html" class="btn-agendar">Preparar Bike</a>
+            </div>
+        </div>
+
+        <section class="workshop-section">
+            <h2>🎓 Workshop e Cursos</h2>
+            <p>Aprenda a cuidar da sua própria bike com nossos workshops práticos!</p>
+            <p>Oferecemos cursos de manutenção básica, regulagem de câmbios e freios, e muito mais. Aulas práticas com instrutores experientes em grupos pequenos para melhor aprendizado.</p>
+            <div class="price-range">Consulte nossa programação mensal</div>
+            <a href="contato.html" class="btn-agendar">Inscrever-se</a>
+        </section>
+
+        <div class="intro-text">
+            <p><strong>Por que escolher nossos serviços?</strong></p>
+            <p>Nossa equipe possui mais de 15 anos de experiência em manutenção e reparos de bicicletas de todos os tipos. Utilizamos apenas peças originais e ferramentas profissionais para garantir a máxima qualidade em cada serviço.</p>
+            <p>Oferecemos garantia em todos os serviços realizados e diagnóstico gratuito para avaliar as necessidades da sua bike. Agende hoje mesmo e mantenha sua bicicleta sempre em perfeitas condições!</p>
+        </div>
+
+        <div class="back-to-top">
+            <a href="#inicio">🔝 Voltar ao início</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column footer-about">
+                <h3>SOFTBIKE</h3>
+                <p>Sua jornada sobre duas rodas começa aqui. Qualidade e performance para ciclistas de todos os níveis.</p>
+                <p class="copyright">&copy; 2025 SoftBike - Programação Web - Turma [TURMA] - Enzo, Eduardo, Pablo</p>
+            </div>
+
+            <div class="footer-column footer-links">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="localizacao.html">Localização</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column footer-social">
+                <h3>Siga-nos</h3>
+                <div class="social-icons-container">
+                    <a href="https://www.instagram.com/seu-usuario" target="_blank" title="Nosso Instagram">
+                        <img src="img/instagram.png" alt="Ícone do Instagram" class="social-icon">
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" title="Nosso WhatsApp">
+                        <img src="img/whatsapp.png" alt="Ícone do WhatsApp" class="social-icon">
+                    </a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Fhome" target="_blank" title="Nosso Twitter">
+                        <img src="img/twitter.png" alt="Ícone do Twitter" class="social-icon">
+                    </a>
+                    <a href="https://www.tiktok.com/login" target="_blank" title="Nosso TikTok">
+                        <img src="img/tik-tok.png" alt="Ícone do TikTok" class="social-icon">
+                    </a>
+                    <a href="https://web.telegram.org/k/" target="_blank" title="Nosso Telegram">
+                        <img src="img/telegram.png" alt="Ícone do Telegram" class="social-icon">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" title="Nosso Facebook">
+                        <img src="img/facebook.png" alt="Ícone do Facebook" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
