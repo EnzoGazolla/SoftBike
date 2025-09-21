@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - SoftBike</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background-color: #8A9BFF;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .header .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .header .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .header .nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .header .social a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .social img {
+            width: 20px;
+            margin-right: 5px;
+        }
+        .main-content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #8A9BFF;
+        }
+        .about-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .about-section h2 {
+            color: #8A9BFF;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        .about-section p {
+            line-height: 1.7;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            text-align: center;
+        }
+        .team-member {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .team-member h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .team-member p {
+            font-style: italic;
+            color: #555;
+        }
+        .site-footer {
+            background-color: #2c2c2c;
+            color: #a7a7a7;
+            padding: 50px 0;
+            font-size: 14px;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        @media (min-width: 768px) {
+            .footer-column {
+                width: 30%;
+            }
+        }
+        .site-footer h3 {
+            color: #ffffff;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #8A9BFF;
+            padding-bottom: 10px;
+        }
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-links ul li {
+            margin-bottom: 12px;
+        }
+        .footer-links a {
+            color: #a7a7a7;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: #8A9BFF;
+            padding-left: 5px;
+        }
+        .social-icons-container {
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons-container .social-icon {
+            height: 32px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        .social-icons-container .social-icon:hover {
+            opacity: 1;
+        }
+        .copyright {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+        .back-to-top {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .back-to-top a {
+            color: #8A9BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-to-top a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SOFTBIKE</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="speed.html">Speed</a>
+            <a href="mountain.html">Mountain</a>
+            <a href="urbana.html">Urbana</a>
+            <a href="eletrica.html">Elétrica</a>
+            <a href="passeio.html">Passeio</a>
+            <a href="acessorios.html">Acessórios</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="social">
+            <a href="https://www.instagram.com/seu-usuario" target="_blank" title="Nosso Instagram">
+                <img src="img/instagram.png" alt="Ícone do Instagram" class="social-icon">
+            </a>
+            <a href="https://wa.me/5511999999999" target="_blank" title="Nosso WhatsApp">
+                <img src="img/whatsapp.png" alt="Ícone do WhatsApp" class="social-icon">
+            </a>
+        </div>
+    </header>
+
+    <main class="main-content" id="inicio">
+        <h1>🚴 Sobre a SoftBike</h1>
+
+        <section class="about-section">
+            <h2>Nossa História</h2>
+            <p>
+                [cite_start]Fundada em 2025, a SoftBike nasceu da paixão pelo ciclismo e do desejo de oferecer uma experiência de compra única para ciclistas de todos os níveis. [cite: 2] [cite_start]Somos uma empresa moderna que busca inspirar um estilo de vida mais saudável e sustentável através do uso da bicicleta. [cite: 5]
+            </p>
+            <p>
+                [cite_start]Atuamos de forma online em todo o Brasil e contamos com uma filial em Brasília, oferecendo um espaço completo com produtos, acessórios e serviços especializados. [cite: 1] [cite_start]Nosso objetivo é criar uma forte presença online, combinando uma identidade visual moderna e esportiva com um site de navegação clara e intuitiva. [cite: 5, 7]
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Nossa Missão</h2>
+            <p>
+                [cite_start]Nossa missão é apresentar os melhores produtos e serviços de forma organizada, atendendo tanto ciclistas iniciantes quanto os mais experientes. [cite: 7, 8] [cite_start]Queremos ser a principal referência para jovens e adultos que veem a bicicleta como um meio de transporte sustentável, uma forma de lazer ou um equipamento esportivo de alta performance. [cite: 8]
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Nossa Equipe</h2>
+            <p>
+                [cite_start]A SoftBike é um projeto acadêmico idealizado e desenvolvido por um time apaixonado por tecnologia e ciclismo. [cite: 7]
+            </p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Enzo</h3>
+                    <p>Desenvolvedor Front-End</p>
+                </div>
+                <div class="team-member">
+                    <h3>Eduardo</h3>
+                    <p>Desenvolvedor Front-End</p>
+                </div>
+                <div class="team-member">
+                    <h3>Pablo</h3>
+                    <p>Desenvolvedor Front-End</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="back-to-top">
+            <a href="#inicio">🔝 Voltar ao início</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column footer-about">
+                <h3>SOFTBIKE</h3>
+                <p>Sua jornada sobre duas rodas começa aqui. Qualidade e performance para ciclistas de todos os níveis.</p>
+                <p class="copyright">&copy; 2025 SoftBike - Programação Web - Turma [TURMA] - Enzo, Eduardo, Pablo</p>
+            </div>
+
+            <div class="footer-column footer-links">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="localizacao.html">Localização</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column footer-social">
+                <h3>Siga-nos</h3>
+                <div class="social-icons-container">
+                    <a href="https://www.instagram.com/seu-usuario" target="_blank" title="Nosso Instagram">
+                        <img src="img/instagram.png" alt="Ícone do Instagram" class="social-icon">
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" title="Nosso WhatsApp">
+                        <img src="img/whatsapp.png" alt="Ícone do WhatsApp" class="social-icon">
+                    </a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Fhome" target="_blank" title="Nosso Twitter">
+                        <img src="img/twitter.png" alt="Ícone do Twitter" class="social-icon">
+                    </a>
+                    <a href="https://www.tiktok.com/login" target="_blank" title="Nosso TikTok">
+                        <img src="img/tik-tok.png" alt="Ícone do TikTok" class="social-icon">
+                    </a>
+                    <a href="https://web.telegram.org/k/" target="_blank" title="Nosso Telegram">
+                        <img src="img/telegram.png" alt="Ícone do Telegram" class="social-icon">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" title="Nosso Facebook">
+                        <img src="img/facebook.png" alt="Ícone do Facebook" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
