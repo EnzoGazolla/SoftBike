@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Detalhado - SoftBike</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background-color: #8A9BFF;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .header .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .header .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .header .nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .header .social a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .social img {
+            width: 20px;
+            margin-right: 5px;
+        }
+        .main-content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #8A9BFF;
+        }
+        .intro-text {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .custom-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            font-size: 14px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .custom-table th, .custom-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .custom-table th {
+            background-color: #8A9BFF;
+            font-weight: bold;
+            color: #fff;
+        }
+        .custom-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .custom-table td {
+            background-color: #ffffff;
+        }
+        .site-footer {
+            background-color: #2c2c2c;
+            color: #a7a7a7;
+            padding: 50px 0;
+            font-size: 14px;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        @media (min-width: 768px) {
+            .footer-column {
+                width: 30%;
+            }
+        }
+        .site-footer h3 {
+            color: #ffffff;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #8A9BFF;
+            padding-bottom: 10px;
+        }
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-links ul li {
+            margin-bottom: 12px;
+        }
+        .footer-links a {
+            color: #a7a7a7;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: #8A9BFF;
+            padding-left: 5px;
+        }
+        .social-icons-container {
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons-container .social-icon {
+            height: 32px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        .social-icons-container .social-icon:hover {
+            opacity: 1;
+        }
+        .copyright {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+        .back-to-top {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .back-to-top a {
+            color: #8A9BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-to-top a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SOFTBIKE</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="acessorios.html">Acessórios</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="social">
+            <a href="https://www.instagram.com/seu-usuario" target="_blank" title="Nosso Instagram">
+                <img src="img/instagram.png" alt="Ícone do Instagram" class="social-icon">
+            </a>
+            <a href="https://wa.me/5511999999999" target="_blank" title="Nosso WhatsApp">
+                <img src="img/whatsapp.png" alt="Ícone do WhatsApp" class="social-icon">
+            </a>
+        </div>
+    </header>
+
+    <main class="main-content" id="inicio">
+    <h1>Tabela Completa de Produtos</h1>
+    <div class="intro-text">
+        <p>Confira abaixo nossa tabela detalhada com os principais produtos, especificações e disponibilidade em nosso catálogo.</p>
+    </div>
+
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th style="background-color: #D6EAF8;">Categoria</th>
+                <th style="background-color: #D1F2EB;">Produto</th>
+                <th style="background-color: #D4EFDF;">Especificação Principal</th>
+                <th style="background-color: #FCF3CF;">Preço</th>
+                <th style="background-color: #FADBD8;">Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" style="background-color: #C3DAF9;">Speed</td>
+                <td style="background-color: #EBF5FB;">Specialized Tarmac SL8</td>
+                <td style="background-color: #E8F8F5;">Quadro de carbono FACT 12r</td>
+                <td style="background-color: #FEF9E7;">R$ 42.000,00</td>
+                <td style="background-color: #FDEDEC;">Em estoque</td>
+            </tr>
+            <tr>
+                <td style="background-color: #EBF5FB;">Trek Madone Gen 8</td>
+                <td style="background-color: #E8F8F5;">Sistema IsoFlow para conforto</td>
+                <td style="background-color: #FEF9E7;">R$ 39.500,00</td>
+                <td style="background-color: #FDEDEC;">Sob encomenda</td>
+            </tr>
+            <tr>
+                <td style="background-color: #EBF5FB;">Cannondale SuperSix Evo</td>
+                <td style="background-color: #E8F8F5;">Tecnologia SAVE para absorção de impacto</td>
+                <td style="background-color: #FEF9E7;">R$ 31.500,00</td>
+                <td style="background-color: #FDEDEC;">Em estoque</td>
+            </tr>
+            <tr>
+                <td colspan="5" style="background-color: #4A56A1; color: white; text-align: center;">Divisão de Categorias</td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="background-color: #D2B4DE;">Mountain</td>
+                <td style="background-color: #F4ECF7;">Specialized Stumpjumper 15</td>
+                <td style="background-color: #F4ECF7;">Suspensão traseira FSR com 150mm</td>
+                <td style="background-color: #F4ECF7;">R$ 28.900,00</td>
+                <td rowspan="2" style="background-color: #D4E6F1;">Em estoque</td>
+            </tr>
+            <tr>
+                <td style="background-color: #F4ECF7;">Santa Cruz Hightower 3 C S</td>
+                <td style="background-color: #F4ECF7;">Suspensão VPP com 145mm traseira</td>
+                <td style="background-color: #F4ECF7;">R$ 31.500,00</td>
+            </tr>
+            <tr>
+                <td style="background-color: #A9DFBF;">Urbana</td>
+                <td style="background-color: #E9F7EF;">Specialized Sirrus X 5.0</td>
+                <td colspan="2" style="background-color: #E9F7EF; text-align: center;">Garfo de suspensão SR Suntour NEX - R$ 6.300,00</td>
+                <td style="background-color: #E9F7EF;">Em estoque</td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="background-color: #F9E79F;">Elétrica</td>
+                <td style="background-color: #FEFDEB;">Aventon Level 3</td>
+                <td style="background-color: #FEFDEB;">Motor traseiro 500W</td>
+                <td style="background-color: #FEFDEB;">R$ 9.500,00</td>
+                <td style="background-color: #FEFDEB;">Em estoque</td>
+            </tr>
+            <tr>
+                <td style="background-color: #FEFDEB;">Lectric XP 4</td>
+                <td style="background-color: #FEFDEB;">Sistema dobrável compacto</td>
+                <td style="background-color: #FEFDEB;">R$ 5.250,00</td>
+                <td style="background-color: #FEFDEB;">Sob encomenda</td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="background-color: #F5CBA7;">Passeio</td>
+                <td style="background-color: #FDEBD0;">Electra Townie 7D</td>
+                <td colspan="3" style="background-color: #FDEBD0; text-align: center;">Geometria Flat Foot Technology - R$ 3.680,00 - Em Estoque</td>
+            </tr>
+            <tr>
+                <td style="background-color: #FDEBD0;">Sixthreezero EVRYjourney</td>
+                <td style="background-color: #FDEBD0;">21 velocidades Shimano</td>
+                <td style="background-color: #FDEBD0;">R$ 2.625,00</td>
+                <td style="background-color: #FDEBD0;">Em estoque</td>
+            </tr>
+            <tr>
+                <td colspan="5" style="background-color: #5D6D7E; color: white; text-align: center;">Acessórios</td>
+            </tr>
+            <tr>
+                <td rowspan="3" style="background-color: #CCD1D1;">Acessórios</td>
+                <td style="background-color: #F4F6F6;">Capacete Specialized Align II</td>
+                <td style="background-color: #F4F6F6;">Sistema de ventilação otimizado</td>
+                <td style="background-color: #F4F6F6;">R$ 280,00</td>
+                <td style="background-color: #F4F6F6;">Em estoque</td>
+            </tr>
+            <tr>
+                <td style="background-color: #F4F6F6;">Bomba de Ar Topeak Joe Blow</td>
+                <td colspan="2" style="background-color: #F4F6F6; text-align: center;">Manômetro preciso - R$ 290,00</td>
+                <td style="background-color: #F4F6F6;">Em estoque</td>
+            </tr>
+            <tr>
+                <td style="background-color: #F4F6F6;">Kit Ferramentas Park Tool</td>
+                <td style="background-color: #F4F6F6;">Chaves Allen, Phillips e mais</td>
+                <td style="background-color: #F4F6F6;">R$ 340,00</td>
+                <td style="background-color: #F4F6F6;">Sob encomenda</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="back-to-top">
+        <a href="#inicio">🔝 Voltar ao início</a>
+    </div>
+</main>
+    
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column footer-about">
+                <h3>SOFTBIKE</h3>
+                <p>Sua jornada sobre duas rodas começa aqui. Qualidade e performance para ciclistas de todos os níveis.</p>
+                <p class="copyright">&copy; 2025 SoftBike - Programação Web - Turma [TURMA] - Enzo, Eduardo, Pablo</p>
+            </div>
+            <div class="footer-column footer-links">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-column footer-social">
+                <h3>Siga-nos</h3>
+                <div class="social-icons-container">
+                    <a href="https://www.instagram.com/seu-usuario" target="_blank" title="Nosso Instagram">
+                        <img src="img/instagram.png" alt="Ícone do Instagram" class="social-icon">
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" title="Nosso WhatsApp">
+                        <img src="img/whatsapp.png" alt="Ícone do WhatsApp" class="social-icon">
+                    </a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Fhome" target="_blank" title="Nosso Twitter">
+                        <img src="img/twitter.png" alt="Ícone do Twitter" class="social-icon">
+                    </a>
+                    <a href="https://www.tiktok.com/login" target="_blank" title="Nosso TikTok">
+                        <img src="img/tik-tok.png" alt="Ícone do TikTok" class="social-icon">
+                    </a>
+                    <a href="https://web.telegram.org/k/" target="_blank" title="Nosso Telegram">
+                        <img src="img/telegram.png" alt="Ícone do Telegram" class="social-icon">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" title="Nosso Facebook">
+                        <img src="img/facebook.png" alt="Ícone do Facebook" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
