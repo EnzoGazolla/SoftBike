@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briefing - SoftBike</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background-color: #8A9BFF;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .header .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .header .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .header .nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .header .social a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .social img {
+            width: 20px;
+            margin-right: 5px;
+        }
+        .main-content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #8A9BFF;
+        }
+        .briefing-section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .briefing-section h2 {
+            color: #8A9BFF;
+            font-size: 22px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        .briefing-section p, .briefing-section ul {
+            line-height: 1.7;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .briefing-section ul {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+        .briefing-section a {
+            color: #7084e8;
+            text-decoration: none;
+        }
+        .briefing-section a:hover {
+            text-decoration: underline;
+        }
+        .site-footer {
+            background-color: #2c2c2c;
+            color: #a7a7a7;
+            padding: 50px 0;
+            font-size: 14px;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        @media (min-width: 768px) {
+            .footer-column {
+                width: 30%;
+            }
+        }
+        .site-footer h3 {
+            color: #ffffff;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #8A9BFF;
+            padding-bottom: 10px;
+        }
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-links ul li {
+            margin-bottom: 12px;
+        }
+        .footer-links a {
+            color: #a7a7a7;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: #8A9BFF;
+            padding-left: 5px;
+        }
+        .social-icons-container {
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons-container .social-icon {
+            height: 32px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        .social-icons-container .social-icon:hover {
+            opacity: 1;
+        }
+        .copyright {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+        .back-to-top {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .back-to-top a {
+            color: #8A9BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-to-top a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">SOFTBIKE</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="social">
+            <a href="https://www.instagram.com/seu-usuario" target="_blank" title="Nosso Instagram">
+                <img src="img/instagram.png" alt="Ícone do Instagram" class="social-icon">
+            </a>
+            <a href="https://wa.me/5511999999999" target="_blank" title="Nosso WhatsApp">
+                <img src="img/whatsapp.png" alt="Ícone do WhatsApp" class="social-icon">
+            </a>
+        </div>
+    </header>
+
+    <main class="main-content" id="inicio">
+        <h1>Briefing do Projeto</h1>
+
+        <section class="briefing-section">
+            <h2>1. Ramo de atuação da empresa e tempo de mercado</h2>
+            <p>Loja especializada em bicicletas, acessórios e serviços relacionados ao ciclismo.</p>
+        </section>
+
+        <section class="briefing-section">
+            <h2>2. Número de filiais/franquias</h2>
+            <p>Online, 1 filial em Brasília.</p>
+        </section>
+
+        <section class="briefing-section">
+            <h2>3. Produtos e/ou serviços oferecidos</h2>
+            <p>Bicicletas de diferentes modelos, acessórios e serviços.</p>
+        </section>
+
+        <section class="briefing-section">
+            <h2>4. Endereço do site atual</h2>
+            <p><a href="https://enzogazolla.github.io/SoftBike/index.html" target="_blank">https://enzogazolla.github.io/SoftBike/index.html</a></p>
+        </section>
+
+        <section class="briefing-section">
+            <h2>5. Vantagens/desvantagens sobre os concorrentes</h2>
+            <p><strong>Vantagens:</strong> Layout intuitivo, identidade visual própria, site otimizado para navegação.</p>
+            <p><strong>Desvantagens:</strong> Somente 1 filial.</p>
+        </section>
+
+        <section class="briefing-section">
+            <h2>6. Referências de sites (outras empresas)</h2>
+            <ul>
+                <li><a href="https://www.adidas.com.br/" target="_blank">Adidas</a></li>
+                <li><a href="https://www.nike.com.br/" target="_blank">Nike</a></li>
+                <li><a href="https://caloi.com" target="_blank">Caloi</a></li>
+                <li><a href="https://bike.shimano.com/pt-BR/home.html" target="_blank">Shimano</a></li>
+            </ul>
+        </section>
+
+        <section class="briefing-section">
+            <h2>7. Objetivos a serem alcançados</h2>
+            <ul>
+                <li>Criar presença online da marca.</li>
+                <li>Apresentar produtos e serviços de forma organizada.</li>
+                <li>Garantir navegação clara e intuitiva.</li>
+            </ul>
+        </section>
+
+        <section class="briefing-section">
+            <h2>8. Público-alvo</h2>
+            <ul>
+                <li>Ciclistas iniciantes e experientes.</li>
+                <li>Jovens e adultos que buscam transporte sustentável ou lazer.</li>
+                <li>Comunidade esportiva interessada em bikes.</li>
+            </ul>
+        </section>
+
+        <section class="briefing-section">
+            <h2>9. Conteúdo do site</h2>
+            <ul>
+                <li>Página inicial com destaque da marca.</li>
+                <li>Catálogo de produtos e acessórios.</li>
+                <li>Serviços oferecidos.</li>
+                <li>Contato e localização.</li>
+            </ul>
+        </section>
+
+        <section class="briefing-section">
+            <h2>10. Imagem a ser transmitida para os usuários</h2>
+            <ul>
+                <li>Modernidade.</li>
+                <li>Esportividade.</li>
+                <li>Layout clean e objetivo.</li>
+            </ul>
+        </section>
+
+        <section class="briefing-section">
+            <h2>11. Documentação disponível</h2>
+            <p>Logotipo, folders, manuais, etc. (Download="Documentação.pdf")</p>
+        </section>
+
+        <section class="briefing-section">
+            <h2>12. Tecnologias ou linguagens desejadas</h2>
+            <p>HTML e CSS.</p>
+        </section>
+
+        <section class="briefing-section">
+            <h2>13. Ferramentas de marketing utilizadas atualmente</h2>
+            <p>Redes Sociais (Instagram, WhatsApp, X, Tiktok, Telegram, FaceBook).</p>
+        </section>
+
+        <section class="briefing-section">
+            <h2>14. Objeções</h2>
+            <p>Evitar excesso de elementos, sobrecarga de cores e fontes difíceis de leitura.</p>
+        </section>
+
+        <section class="briefing-section">
+            <h2>15. Mínimo e máximo de verba disponível para o projeto</h2>
+            <p>Projeto acadêmico, esforços conjuntos dos 3 integrantes.</p>
+        </section>
+
+        <section class="briefing-section">
+            <h2>16. Prazo para desenvolvimento e/ou cronograma</h2>
+            <p>Data de Entrega: 22/09/2025, 23h59. Apresentação: 23/09/2025.</p>
+        </section>
+
+        <section class="briefing-section">
+            <h2>17. Contato</h2>
+            <ul>
+                <li>Pablo Lemos de Carvalho, RA: 22253300</li>
+                <li>Enzo Gazolla Nagano, RA: 22401710</li>
+                <li>Eduardo Carvalho Gonçalves da Silva, RA: 22151915</li>
+            </ul>
+        </section>
+
+        <div class="back-to-top">
+            <a href="#inicio">Voltar ao início</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column footer-about">
+                <h3>SOFTBIKE</h3>
+                <p>Sua jornada sobre duas rodas começa aqui. Qualidade e performance para ciclistas de todos os níveis.</p>
+                <p class="copyright">&copy; 2025 SoftBike - Programação Web - Turma [TURMA] - Enzo, Eduardo, Pablo</p>
+            </div>
+
+            <div class="footer-column footer-links">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column footer-social">
+                <h3>Siga-nos</h3>
+                <div class="social-icons-container">
+                    <a href="https://www.instagram.com/seu-usuario" target="_blank" title="Nosso Instagram">
+                        <img src="img/instagram.png" alt="Ícone do Instagram" class="social-icon">
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" title="Nosso WhatsApp">
+                        <img src="img/whatsapp.png" alt="Ícone do WhatsApp" class="social-icon">
+                    </a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Fhome" target="_blank" title="Nosso Twitter">
+                        <img src="img/twitter.png" alt="Ícone do Twitter" class="social-icon">
+                    </a>
+                    <a href="https://www.tiktok.com/login" target="_blank" title="Nosso TikTok">
+                        <img src="img/tik-tok.png" alt="Ícone do TikTok" class="social-icon">
+                    </a>
+                    <a href="https://web.telegram.org/k/" target="_blank" title="Nosso Telegram">
+                        <img src="img/telegram.png" alt="Ícone do Telegram" class="social-icon">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" title="Nosso Facebook">
+                        <img src="img/facebook.png" alt="Ícone do Facebook" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
